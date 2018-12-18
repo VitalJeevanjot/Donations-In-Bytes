@@ -16,12 +16,12 @@
 <!-- Add a progressbar with button that say donate (Button iwth deterministic progress) -->
 <!-- Add good icon to donate buttons -->
     <q-page-container>
-      <q-page>
-        <div style="column-count: 3; column-gap: 4px;">
-        <div style="width:30%; height: 30%">
-          <q-card inline class="q-ma-sm">
-        <q-card-media>
-          <img src="https://pay.google.com/about/static/images/logos/google-pay-logo.svg" style="object-fit: cover;">
+      <q-page class="row justify-center">
+          <q-list no-border>
+            <q-item v-for='item in items' :key='item.title' sparse>
+          <q-card inline class="q-ma-sm no-wrap" style="width: 100%">
+        <q-card-media align="center">
+          <img src="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/02/google-pacman-796x419.jpg" style="object-fit: contain; width: 350px; height: 300px;">
         </q-card-media>
         <q-card-title class="relative-position">
           <div class="ellipsis">Cafe Basilico</div>
@@ -34,191 +34,27 @@
         <q-card-actions align="center">
             <q-btn color="white" style="width: 100%" align="center">
           <div style="width:100%" >
-              <img src="https://lh3.googleusercontent.com/YtuGzrxbA3Xx51Kg7cNctJrK0IEKHlstSRUz9Y1WyQrJK9b5ZUqAMIR3cMjNBuqKFuk=s180" style="width:7%"/>
+              <img class="cover" src="https://lh3.googleusercontent.com/YtuGzrxbA3Xx51Kg7cNctJrK0IEKHlstSRUz9Y1WyQrJK9b5ZUqAMIR3cMjNBuqKFuk=s180" style="width:7%"/>
           </div>
           </q-btn>
         </q-card-actions>
         </q-card>
-        </div>
-
-      <div style="width:30%; height: 30%">
-        <q-card inline class="q-ma-sm">
-      <q-card-media>
-        <img src="https://pay.google.com/about/static/images/logos/google-pay-logo.svg" style="object-fit: cover;">
-      </q-card-media>
-      <q-card-title class="relative-position">
-        <div class="ellipsis">Cafe Basilico</div>
-      </q-card-title>
-      <q-card-main>
-        <p class="text-faded">Small plates, salads & sandwiches in an intimate setting. 2</p>
-      </q-card-main>
-      <q-card-separator />
-      <!-- Added width then in that width a div tag to full the button width and as child give reference to image width % size to get right size on pc and mobile -->
-      <q-card-actions align="center">
-          <q-btn color="white" style="width: 100%" align="center">
-        <div style="width:100%" >
-            <img src="https://lh3.googleusercontent.com/YtuGzrxbA3Xx51Kg7cNctJrK0IEKHlstSRUz9Y1WyQrJK9b5ZUqAMIR3cMjNBuqKFuk=s180" style="width:7%"/>
-        </div>
-        </q-btn>
-      </q-card-actions>
-      </q-card>
-      </div>
-
-    <div style="width:30%; height: 30%">
-      <q-card inline class="q-ma-sm">
-    <q-card-media>
-      <img src="https://www.w3schools.com/images/colorpicker.gif" style="object-fit: cover;">
-    </q-card-media>
-    <q-card-title class="relative-position">
-      <div class="ellipsis">Cafe Basilico</div>
-    </q-card-title>
-    <q-card-main>
-      <p class="text-faded">Small plates, salads & sandwiches in an intimate setting.</p>
-    </q-card-main>
-    <q-card-separator />
-    <!-- Added width then in that width a div tag to full the button width and as child give reference to image width % size to get right size on pc and mobile -->
-    <q-card-actions align="center">
-        <q-btn color="white" style="width: 100%" align="center">
-      <div style="width:100%" >
-          <img src="https://lh3.googleusercontent.com/YtuGzrxbA3Xx51Kg7cNctJrK0IEKHlstSRUz9Y1WyQrJK9b5ZUqAMIR3cMjNBuqKFuk=s180" style="width:7%"/>
-      </div>
-      </q-btn>
-    </q-card-actions>
-    </q-card>
-    </div>
-
-  <div style="width:30%; height: 30%">
-    <q-card inline class="q-ma-sm">
-  <q-card-media>
-    <img src="https://pay.google.com/about/static/images/logos/google-pay-logo.svg" style="object-fit: cover;">
-  </q-card-media>
-  <q-card-title class="relative-position">
-    <div class="ellipsis">Cafe Basilico</div>
-  </q-card-title>
-  <q-card-main>
-    <p class="text-faded">Small plates, salads & sandwiches in an intimate setting.3</p>
-  </q-card-main>
-  <q-card-separator />
-  <!-- Added width then in that width a div tag to full the button width and as child give reference to image width % size to get right size on pc and mobile -->
-  <q-card-actions align="center">
-      <q-btn color="white" style="width: 100%" align="center">
-    <div style="width:100%" >
-        <img src="https://lh3.googleusercontent.com/YtuGzrxbA3Xx51Kg7cNctJrK0IEKHlstSRUz9Y1WyQrJK9b5ZUqAMIR3cMjNBuqKFuk=s180" style="width:7%"/>
-    </div>
-    </q-btn>
-  </q-card-actions>
-  </q-card>
-  </div>
-
-<div style="width:30%; height: 30%">
-  <q-card inline class="q-ma-sm">
-<q-card-media>
-  <img src="https://tpc.googlesyndication.com/simgad/2763227931070135707" style="object-fit: cover;">
-</q-card-media>
-<q-card-title class="relative-position">
-  <div class="ellipsis">Cafe Basilico</div>
-</q-card-title>
-<q-card-main>
-  <p class="text-faded">Small plates, salads & sandwiches in an intimate setting.4</p>
-</q-card-main>
-<q-card-separator />
-<!-- Added width then in that width a div tag to full the button width and as child give reference to image width % size to get right size on pc and mobile -->
-<q-card-actions align="center">
-    <q-btn color="white" style="width: 100%" align="center">
-  <div style="width:100%" >
-      <img src="https://lh3.googleusercontent.com/YtuGzrxbA3Xx51Kg7cNctJrK0IEKHlstSRUz9Y1WyQrJK9b5ZUqAMIR3cMjNBuqKFuk=s180" style="width:7%"/>
-  </div>
-  </q-btn>
-</q-card-actions>
-</q-card>
-</div>
-
-<div style="width:30%; height: 30%">
-  <q-card inline class="q-ma-sm">
-<q-card-media>
-  <img src="https://pay.google.com/about/static/images/logos/google-pay-logo.svg" style="object-fit: cover;">
-</q-card-media>
-<q-card-title class="relative-position">
-  <div class="ellipsis">Cafe Basilico</div>
-</q-card-title>
-<q-card-main>
-  <p class="text-faded">Small plates, salads & sandwiches in an intimate setting.4</p>
-</q-card-main>
-<q-card-separator />
-<!-- Added width then in that width a div tag to full the button width and as child give reference to image width % size to get right size on pc and mobile -->
-<q-card-actions align="center">
-    <q-btn color="white" style="width: 100%" align="center">
-  <div style="width:100%" >
-      <img src="https://lh3.googleusercontent.com/YtuGzrxbA3Xx51Kg7cNctJrK0IEKHlstSRUz9Y1WyQrJK9b5ZUqAMIR3cMjNBuqKFuk=s180" style="width:7%"/>
-  </div>
-  </q-btn>
-</q-card-actions>
-</q-card>
-</div>
-
-<div style="width:30%; height: 30%">
-  <q-card inline class="q-ma-sm">
-<q-card-media>
-  <img src="https://pay.google.com/about/static/images/logos/google-pay-logo.svg" style="object-fit: cover;">
-</q-card-media>
-<q-card-title class="relative-position">
-  <div class="ellipsis">Cafe Basilico</div>
-</q-card-title>
-<q-card-main>
-  <p class="text-faded">Small plates, salads & sandwiches in an intimate setting.4</p>
-</q-card-main>
-<q-card-separator />
-<!-- Added width then in that width a div tag to full the button width and as child give reference to image width % size to get right size on pc and mobile -->
-<q-card-actions align="center">
-    <q-btn color="white" style="width: 100%" align="center">
-  <div style="width:100%" >
-      <img src="https://lh3.googleusercontent.com/YtuGzrxbA3Xx51Kg7cNctJrK0IEKHlstSRUz9Y1WyQrJK9b5ZUqAMIR3cMjNBuqKFuk=s180" style="width:7%"/>
-  </div>
-  </q-btn>
-</q-card-actions>
-</q-card>
-</div>
-
-<div style="width:30%; height: 30%">
-  <q-card inline class="q-ma-sm">
-<q-card-media>
-  <img src="https://pay.google.com/about/static/images/logos/google-pay-logo.svg" style="object-fit: cover;">
-</q-card-media>
-<q-card-title class="relative-position">
-  <div class="ellipsis">Cafe Basilico</div>
-</q-card-title>
-<q-card-main>
-  <p class="text-faded">Small plates, salads & sandwiches in an intimate setting.4</p>
-</q-card-main>
-<q-card-separator />
-<!-- Added width then in that width a div tag to full the button width and as child give reference to image width % size to get right size on pc and mobile -->
-<q-card-actions align="center">
-    <q-btn color="white" style="width: 100%" align="center">
-  <div style="width:100%" >
-      <img src="https://lh3.googleusercontent.com/YtuGzrxbA3Xx51Kg7cNctJrK0IEKHlstSRUz9Y1WyQrJK9b5ZUqAMIR3cMjNBuqKFuk=s180" style="width:7%"/>
-  </div>
-  </q-btn>
-</q-card-actions>
-</q-card>
-</div>
-      </div>
+      </q-item>
+    </q-list>
       </q-page>
     </q-page-container>
   </q-layout>
 </template>
 
 <script>
-import { openURL } from 'quasar'
-
 export default {
   name: 'MyLayout',
   data () {
     return {
-      leftDrawerOpen: this.$q.platform.is.desktop
+      items: [{}, {}, {}]
     }
   },
   methods: {
-    openURL
   }
 }
 </script>
