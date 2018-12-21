@@ -60,20 +60,25 @@ module.exports = function(ctx) {
         'QCardMain',
         'QCardMedia',
         'QCardSeparator',
-        'QCardActions'
+        'QCardActions',
+        'QTabs',
+        'QTab',
+        'QTabPane',
+        'QRouteTab',
+        'QProgress'
       ],
-    directives: [
-      'Ripple'
-    ],
-    // Quasar plugins
-    plugins: [
-      'Notify'
-    ]
-    // iconSet: ctx.theme.mat ? 'material-icons' : 'ionicons'
-    // i18n: 'de' // Quasar language
-  },
-  // animations: 'all' --- includes all animations
-  animations: [],
+      directives: [
+        'Ripple'
+      ],
+      // Quasar plugins
+      plugins: [
+        'Notify'
+      ]
+      // iconSet: ctx.theme.mat ? 'material-icons' : 'ionicons'
+      // i18n: 'de' // Quasar language
+    },
+    // animations: 'all' --- includes all animations
+    animations: [],
     ssr: {
       pwa: false
     },
@@ -142,5 +147,5 @@ module.exports = function(ctx) {
         // appId: 'quasar-app'
       }
     }
-}
+  }
 }
